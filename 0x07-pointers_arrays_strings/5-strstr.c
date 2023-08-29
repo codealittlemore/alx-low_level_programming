@@ -1,20 +1,33 @@
 #include "main.h"
 
 /**
- * print_chessboard - entry point
- * @a: array
+ * _strstr - entry point
+ * @haystack: array
+ * @needle: the substring
  * Return: returns result
  */
 
-void print_chessboard(char (*a)[8])
+char *_strstr(char *haystack, char *needle)
 {
-	int i;
-	int j;
+	int index;
 
-	for (i = 0; i < 0; i++)
+	if (*needle == 0)
+	return (haystack);
+
+	while (*haystack)
 	{
-	for (j = 0; j < 0; j++)
-	_putchar(a[i][j]);
-	_putchar('\n');
+	index = 0;
+
+	if (haystack[index] == needle[index])
+	{
+	do {
+	if (needle[index + 1] == '\0')
+	return (haystack);
+	index++;
+	} while (haystack[index] == needle[index]);
 	}
+	haystack++;
+	}
+
+	return ('\0');
 }
