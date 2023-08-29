@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_diagrams - entry point
+ * print_diagsums - entry point
  * @a: input
  * @size: input
  * Return: new result
