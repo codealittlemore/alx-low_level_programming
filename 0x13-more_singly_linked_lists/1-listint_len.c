@@ -1,6 +1,7 @@
 #include "lists.h"
 
 /**
+ * size_t - function
  * listint_len - This returns the number of elements in a listint_t list.
  * @h: This is the pointer to the head of the list.
  *
